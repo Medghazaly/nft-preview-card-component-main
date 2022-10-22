@@ -1,28 +1,28 @@
 :root {
-    --Soft-blue: hsl(215, 51%, 70%);
-    --Cyan: hsl(178, 100%, 50%);
+  --Soft-blue: hsl(215, 51%, 70%);
+  --Cyan: hsl(178, 100%, 50%);
 
-    /* Neutral */
+  /* Neutral */
 
-    --main-BG: hsl(217, 54%, 11%);
-    --card-BG: hsl(216, 50%, 16%);
-    --line: hsl(215, 32%, 27%);
-    --White: hsl(0, 0%, 100%);
+  --main-BG: hsl(217, 54%, 11%);
+  --card-BG: hsl(216, 50%, 16%);
+  --line: hsl(215, 32%, 27%);
+  --White: hsl(0, 0%, 100%);
 }
 
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 body {
   background: var(--main-BG);
-  font-family: 'Outfit', sans-serif;
+  font-family: "Outfit", sans-serif;
 }
 
 ul {
-    list-style: none;
+  list-style: none;
 }
 
 .container {
@@ -52,92 +52,92 @@ ul {
 }
 
 .container .main-image:hover::before {
-    content: "";
-    position: absolute;
-    background: url(../images/icon-view.svg);
-    background-size: cover;
-    z-index: 10;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    width: 48px;
-    height: 48px;
+  content: "";
+  position: absolute;
+  background: url(../images/icon-view.svg);
+  background-size: cover;
+  z-index: 10;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 48px;
+  height: 48px;
 }
 
 .container .main-image:hover::after {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: #00FFF8;
-    opacity: .5;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #00fff8;
+  opacity: 0.5;
 }
 
-.container h3 {
-    font-weight: 600;
-    font-size: 22px;
-    cursor: pointer;
-    margin: 24px 0 16px;
-    color: var(--White);
+.container h1 {
+  font-weight: 600;
+  font-size: 22px;
+  cursor: pointer;
+  margin: 24px 0 16px;
+  color: var(--White);
 }
 
-.container h3:hover {
-    color: #00FFF8;
+.container h1:hover {
+  color: #00fff8;
 }
 
-.container p {
-    font-size: 18px;
-    font-weight: 300;
-    line-height: 1.45;
+.container .discription {
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 1.45;
 
-    margin-bottom: 24px;
+  margin-bottom: 24px;
 }
 
-.container ul {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding-bottom: 24px;
-    border-bottom: 1px solid var(--line);
+.container .parent {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 24px;
+  border-bottom: 1px solid var(--line);
 }
 
-.container ul li {
-    display: flex;
-    align-items: center;
+.container .parent div {
+  display: flex;
+  align-items: center;
 }
-.container ul li img {
-    margin-right: 6.48px;
+.container .parent img {
+  margin-right: 6.48px;
 }
 
-.container ul li:first-child {
-    color: var(--Cyan);
+.container .parent div:first-child {
+  color: var(--Cyan);
+  font-weight: bold;
 }
 
 footer {
-    display: flex;
-    align-items: center;
-    font-weight: 400;
-    font-size: 16px;
-    margin-top: 16px;
+  display: flex;
+  align-items: center;
+  font-weight: 400;
+  font-size: 16px;
+  margin-top: 15px;
 }
 
 footer .foot {
-    width: 33px;
-    height: 33px;
-    margin-right: 16px;
-    border: 1px solid var(--White);
-    border-radius: 50%;
+  width: 33px;
+  height: 33px;
+  margin-right: 16px;
+  border: 1px solid var(--White);
+  border-radius: 50%;
 }
 
 footer span {
-    color: var(--White);
-    cursor: pointer;
-    margin-left: 5px;
+  color: var(--White);
+  cursor: pointer;
+  margin-left: 5px;
 }
 
 footer span:hover {
-    color: var(--Cyan);
+  color: var(--Cyan);
 }
-
